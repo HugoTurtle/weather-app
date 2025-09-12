@@ -1,8 +1,17 @@
 import "./styles.css";
-import sample from "./sample.jpg";
+import fetchData from "./data/fetch-data";
+import processJson from "./data/process-json";
+import displayData from "./data/display-data";
 
-const testImage = document.createElement("img");
-testImage.src = sample;
-document.body.appendChild(testImage);
+const form = document.getElementById("search-city-from");
+const searchInput = document.getElementById("search-bar");
 
-console.log("Hello from template project!");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const searchTerm = searchInput.value.trim();
+
+  if (searchTerm) {
+    displayData(processJson(fetchData(searchTerm), 0));
+  }
+});
