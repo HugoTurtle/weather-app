@@ -37,3 +37,9 @@ header {
   border: none;
   padding: 10px;
 }
+.dropdown-content {
+  display: none;
+}
+.dropdown-content.visible {
+  display: block;
+}
