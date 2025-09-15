@@ -6,6 +6,9 @@
 input {
   appearance: none;
 }
+ul {
+  list-style-type: none;
+}
 html {
   height: 100%;
 }
