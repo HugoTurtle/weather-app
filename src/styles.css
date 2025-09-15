@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --background-color: #f25c05;
+  --font-color: #f2f0e4;
+}
 input {
   appearance: none;
 }
@@ -14,12 +18,13 @@ html {
 }
 body {
   min-height: 100vh;
+  color: var(--font-color);
 }
 header {
   display: flex;
   padding: 20px;
   justify-content: space-between;
-  background-color: teal;
+  background-color: var(--background-color);
 }
 #search-city-form {
   display: flex;
