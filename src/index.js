@@ -3,7 +3,7 @@ import fetchData from "./data/fetch-data";
 import processJson from "./data/process-json";
 import displayData from "./data/display-data";
 
-const form = document.getElementById("search-city-from");
+const form = document.getElementById("search-city-form");
 const searchInput = document.getElementById("search-bar");
 
 form.addEventListener("submit", (e) => {
