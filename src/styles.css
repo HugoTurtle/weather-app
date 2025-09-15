@@ -13,6 +13,13 @@ input {
 ul {
   list-style-type: none;
 }
+button {
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 html {
   height: 100%;
 }
