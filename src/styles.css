@@ -15,3 +15,11 @@ header {
   justify-content: space-between;
   background-color: teal;
 }
+#search-city-form {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding: 0px 80px;
+  text-align: center;
+  gap: 10px;
+}
