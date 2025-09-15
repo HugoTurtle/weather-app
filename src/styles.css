@@ -9,3 +9,9 @@ html {
 body {
   min-height: 100vh;
 }
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: teal;
+}
