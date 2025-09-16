@@ -40,14 +40,15 @@ header {
   padding: 0px 80px;
   text-align: center;
   gap: 10px;
-}
-#search-bar {
-  font-size: inherit;
-  height: 3em;
-  border-radius: 10px;
-  outline: 0;
-  border: none;
-  padding: 10px;
+
+  & #search-bar {
+    font-size: inherit;
+    height: 3em;
+    border-radius: 10px;
+    outline: 0;
+    border: none;
+    padding: 10px;
+  }
 }
 .dropdown-content {
   display: none;
