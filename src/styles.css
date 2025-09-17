@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 :root {
-  --background-color: #f25c05;
-  --font-color: #f2f0e4;
-}
+  --orange: #f25c05;
+  --white: #f2f0e4;
+}ß
 input {
   appearance: none;
 }
@@ -25,13 +25,13 @@ html {
 }
 body {
   min-height: 100vh;
-  color: var(--font-color);
+  color: var(--white);
 }
 header {
   display: flex;
   padding: 20px;
   justify-content: space-between;
-  background-color: var(--background-color);
+  background-color: var(--orange);
 }
 #search-city-form {
   display: flex;
