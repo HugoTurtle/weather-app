@@ -51,20 +51,22 @@ header {
     padding: 10px;
   }
 }
-.dropdown-content {
-  display: none;
-}
-.dropdown-content.visible {
-  display: block;
-}
-.dropdown-btn {
-  background-color: var(--white);
-  color: var(--orange);
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1.2em;
-}
-.dropdown-btn:hover {
-  color: var(--white);
-  background-color: var(--orange-dark);
+.dropdown {
+  & .dropdown-btn {
+    background-color: var(--white);
+    color: var(--orange);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+  & .dropdown-btn:hover {
+    color: var(--white);
+    background-color: var(--orange-dark);
+  }
+  & .dropdown-content {
+    display: none;
+  }
+  & .dropdown-content.visible {
+    display: block;
+  }
 }
