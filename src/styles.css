@@ -6,6 +6,7 @@
 :root {
   --orange: #f25c05;
   --white: #f2f0e4;
+  --orange-dark: #ae4000;
 }
 input {
   appearance: none;
@@ -65,5 +66,5 @@ header {
 }
 .dropdown-btn:hover {
   color: var(--white);
-  background-color: #ae4000;
+  background-color: var(--orange-dark);
 }
