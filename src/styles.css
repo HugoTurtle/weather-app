@@ -73,13 +73,15 @@ header {
       gap: 15px;
 
       position: absolute;
-      padding: 5px;
       background: var(--white);
       color: var(--orange);
       min-width: 175px;
       border-radius: 3px;
       top: 55px;
       right: 45px;
+    }
+    & li {
+      padding: 5px;
     }
     & button {
       font-size: 1.1rem;
