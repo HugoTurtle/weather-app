@@ -52,6 +52,8 @@ header {
   }
 }
 .dropdown {
+  position: relative;
+
   & .dropdown-btn {
     background-color: var(--white);
     color: var(--orange);
@@ -65,6 +67,24 @@ header {
   }
   & .dropdown-content {
     display: none;
+    & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      position: absolute;
+      padding: 5px;
+      background: var(--white);
+      color: var(--orange);
+      min-width: 175px;
+      border-radius: 3px;
+      top: 55px;
+      right: 45px;
+    }
+    & button {
+      font-size: 1.1rem;
+      padding: 5px;
+    }
   }
   & .dropdown-content.visible {
     display: block;
