@@ -82,6 +82,12 @@ header {
     }
     & li {
       padding: 5px;
+      border-radius: 3px;
+    }
+    & li:hover {
+      color: var(--white);
+      background-color: var(--orange-dark);
+      cursor: pointer;
     }
     & button {
       font-size: 1.1rem;
