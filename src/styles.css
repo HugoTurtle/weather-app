@@ -112,6 +112,12 @@ main {
   display: flex;
   margin: 20px;
 }
+.info-card {
+  height: 550px;
+  padding: 20px;
+  width: 45%;
+  border-radius: 10px;
+}
 #weather-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
