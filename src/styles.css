@@ -125,6 +125,7 @@ main {
 
   & #address {
     grid-column: 1 / 3;
+    font-size: 3.5rem;
   }
   & #conditions {
     grid-column: 1 / 3;
