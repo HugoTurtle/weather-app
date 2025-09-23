@@ -121,7 +121,6 @@ main {
 #weather-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px;
 
   & #address {
     grid-column: 1 / 3;
