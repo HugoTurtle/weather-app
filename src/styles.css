@@ -118,6 +118,7 @@ main {
   padding: 20px;
   width: 45%;
   border-radius: 10px;
+  background-color: var(--orange);
 }
 #weather-card {
   display: grid;
