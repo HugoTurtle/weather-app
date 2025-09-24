@@ -125,6 +125,11 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(5, 1fr);
 
+  & > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   & #address {
     grid-column: 1 / 3;
     font-size: 3.5rem;
