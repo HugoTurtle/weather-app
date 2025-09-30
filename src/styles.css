@@ -145,6 +145,9 @@ main {
   & #temp {
     font-size: 5rem;
   }
+  & .temp-container {
+    align-items: start;
+  }
 }
 #weather-details-card {
   display: grid;
