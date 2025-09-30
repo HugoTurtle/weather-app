@@ -4,5 +4,8 @@ export default async function displayData(weatherObjPromise) {
 
   allElements.forEach((element) => {
     const key = element.id;
+    if (key in weatherObj) {
+      element.textContent = weatherObj[key];
+    }
   });
 }
