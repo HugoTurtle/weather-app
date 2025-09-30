@@ -1,3 +1,3 @@
-export default function displayData(weatherObj) {
-  console.log(weatherObj);
+export default async function displayData(weatherObjPromise) {
+  const weatherObj = await weatherObjPromise;
 }
