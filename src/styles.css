@@ -120,6 +120,11 @@ main {
   border-radius: 10px;
   background-color: var(--orange);
 }
+.data-with-unit {
+  display: flex;
+  align-items: start;
+  gap: 5px;
+}
 #weather-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -145,10 +150,7 @@ main {
   & #temp {
     font-size: 5rem;
   }
-  & .temp-container {
-    align-items: start;
-    gap: 5px;
-  }
+
 }
 #weather-details-card {
   display: grid;
