@@ -150,7 +150,6 @@ main {
   & #temp {
     font-size: 5rem;
   }
-
 }
 #weather-details-card {
   display: grid;
@@ -167,6 +166,9 @@ main {
     & p {
       flex: 2;
       font-size: 2.5rem;
+    }
+    & .data-with-unit {
+      flex: 2;
     }
   }
 }
