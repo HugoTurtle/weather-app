@@ -1,4 +1,5 @@
 import { fahrenheitToCelsius } from "../utils/convert-temp";
+import { celsiusToFahrenheit } from "../utils/convert-temp";
 
 export function modifyTempData(weatherPromise, tempScale) {
   return weatherPromise.then((weatherData) => {
@@ -12,6 +13,12 @@ export function modifyTempData(weatherPromise, tempScale) {
         );
         break;
       case "celsius":
+        weatherData.temp = celsiusToFahrenheit(weatherData.temp);
+        weatherData.tempMax = celsiusToFahrenheit(weatherData.tempMax);
+        weatherData.tempMin = celsiusToFahrenheit(weatherData.tempMin);
+        weatherData.feelsLikeTemp = celsiusToFahrenheit(
+          weatherData.feelsLikeTemp,
+        );
         break;
       default:
         console.log("Error with temperature scale inputted");
