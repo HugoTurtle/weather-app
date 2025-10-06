@@ -1,6 +1,9 @@
+function roundToHundredsValue(num) {
+  return Math.round((num + Number.EPSILON) * 100) / 100
+}
 export function fahrenheitToCelsius(fahrenheit) {
-  return ((fahrenheit - 32) * 5) / 9;
+  return roundToHundredsValue(((fahrenheit - 32) * 5) / 9);
 }
 export function celsiusToFahrenheit(celsius) {
-  return (celsius * 9) / 5 + 32;
+  return roundToHundredsValue((celsius * 9) / 5 + 32);
 }
