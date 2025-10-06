@@ -101,6 +101,8 @@ header {
     & button {
       font-size: 1.1rem;
       padding: 5px;
+      width: 100%;
+      text-align: start;
     }
   }
   & .dropdown-content.visible {
