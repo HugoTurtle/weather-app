@@ -80,7 +80,6 @@ header {
     & ul {
       display: flex;
       flex-direction: column;
-      gap: 15px;
 
       position: absolute;
       background: var(--white);
