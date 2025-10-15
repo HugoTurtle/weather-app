@@ -3,6 +3,7 @@ import processJson from "../data/process-json";
 import displayData from "../data/display-data";
 import { modifyTempData } from "../data/modify-data";
 import { toggleTemp, changeTempDisplay } from "./toggle-temperature-cycle";
+import displayMain from "./display-main";
 
 export default function weatherController() {
   let temperatureScale;
@@ -16,6 +17,7 @@ export default function weatherController() {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+    displayMain();
     defaultTemperatureCycle(tempButton);
 
     toggleTempButton = true;

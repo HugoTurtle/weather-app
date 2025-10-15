@@ -110,8 +110,11 @@ header {
   }
 }
 main {
-  display: flex;
+  display: none;
   margin: 20px;
+}
+main.visible {
+  display: flex;
   justify-content: space-evenly;
 }
 .info-card {
