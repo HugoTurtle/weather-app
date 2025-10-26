@@ -1,6 +1,6 @@
 import fetchData from "../data/fetch-data";
 import processJson from "../data/process-json";
-import displayData from "../data/display-data";
+import { displayData } from "../data/display-data";
 import { modifyTempData } from "../data/modify-data";
 import { toggleTemp, changeTempDisplay } from "./toggle-temperature-cycle";
 import displayMain from "./display-main";
