@@ -26,3 +26,13 @@ export function modifyTempData(weatherPromise, tempScale) {
     return weatherData;
   });
 }
+export async function getWeatherIcon(weatherData) {
+  const condition = weatherData.icon;
+
+  try {
+    const icon = await import(`../weather-icons/${condition}.svg`);
+    return icon.default;
+  } catch (error) {
+    console.error(`Icon for ${condition} not found`, error);
+  }
+}
