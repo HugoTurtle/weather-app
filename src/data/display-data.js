@@ -1,4 +1,6 @@
-export default async function displayData(weatherObjPromise) {
+import { getWeatherIcon } from "./modify-data";
+
+export async function displayData(weatherObjPromise) {
   const weatherObj = await weatherObjPromise;
   const allElements = document.querySelectorAll("[id]");
 
@@ -8,4 +10,9 @@ export default async function displayData(weatherObjPromise) {
       element.textContent = weatherObj[key];
     }
   });
+  const iconSrc = await getWeatherIcon(weatherObj);
+  displayWeatherIcon(iconSrc);
+}
+export async function displayWeatherIcon(iconSrc) {
+  document.querySelector(".weather-icon").src = iconSrc;
 }
